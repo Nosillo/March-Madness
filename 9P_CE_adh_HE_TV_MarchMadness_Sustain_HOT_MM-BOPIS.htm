@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- A little more standards friendly. utf-8 works for most cases -->
+<meta name="viewport" content="width=device-width" />
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Use the latest (edge) version of IE rendering engine -->
+<meta name="x-apple-disable-message-reformatting" />
+<!-- Disable auto-scale in iOS 10 Mail entirely -->
+<title>SAMSUNG</title>
+<!-- The title tag shows in email notifications, like Android 4.4. -->
+
+<!-- CSS Reset -->
+<style type="text/css">
+
+    
+ 
+/* Star Rating Survey CSS BEGIN */
+<%@ include view='PVIEW677' %>
+/* Star Rating Survey CSS END */
+    
+    
+/*prevent affecting line height:*/
+
+    
+/* What it does: Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+
+html, body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table, td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+table table table {
+    table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode: bicubic;
+}
+/* Affects Address universal block, stopping blue linking*/
+.addressColor {
+    color: #6d6e71 !important;
+}
+/* Prevents Links from Changing Color after Clicking. Mostly for Outlook*/
+a:visited {
+    color: #3a3a3a !important;
+}
+span.msoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+span.msoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+/* What it does: A work-around for email clients meddling in triggered links. */
+
+.x-gmail-data-detectors,    /* Gmail */ .x-gmail-data-detectors *, .aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+/*Fix for Outlook.com and 365 gaps*/
+div, button {
+    vertical-align: bottom;
+}
+
+@media screen and (max-width: 480px) {
+div.mobileBorder {
+    border-left: #f4f4f4 solid 10px !important;
+    border-right: #f4f4f4 solid 10px !important;
+}
+td.headline, a.headline {
+    font-size: 5.9vw !important;
+    line-height: 7.6vw !important;
+}
+td.headline {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+}
+td.subCopy, a.subCopy {
+    font-size: 3.5vw !important;
+    line-height: 5.4vw !important;
+}
+td.subCopy {
+    padding: 0px 25px !important;
+}
+td.subCopy.modules {
+    padding: 0px 25px 10px !important;
+}
+/* Add custom style classes for one-off elements */
+td.custom1, a.custom1 {
+/* Add custome VW font overrides here */
+}
+}
+</style>
+<style>
+/* What it does: A work-around for iOS meddling in triggered links. Gmail will strip this. */
+*[x-apple-data-detectors]  /* iOS */ {
+    color:inherit !important;
+    text-decoration: none !important;
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+</style>
+ 
+
+
+<%@ include view='PVIEW230' %>
+
+<%
+   var preheader = "";
+   var firstModuleAlt = "";
+   
+   if (targetData.segmentCode == "A1_Hot_BOPIS") {
+preheader = "Save up to $200 on select Samsung TV and Audio<span>&nbsp;</span>bundle.";
+   firstModuleAlt = "Take your couch courtside.";
+   
+} else if (targetData.segmentCode == "A1_Hot") {
+  preheader = "Don't miss your shot at one of these special<span>&nbsp;</span>offers.";
+   firstModuleAlt = "Take your couch courtside.";
+
+} 
+   
+%>
+    
+</head>
+    
+<body width="100%" bgcolor="#f4f4f4" style="margin:0; padding:0; width:100% !important;">
+<center style="width:100%; background:#f4f4f4;">  
+  
+  <!-- Visually Hidden Preheader Text : BEGIN -->
+  <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;"> <%= preheader %> - <%= firstModuleAlt %> 
+    <!--This is for the five Pixel Tracking --> 
+    <img src="https://samsungelectronicsamericainc.demdex.net/event?d_cid_ic=my_samus_crm%01<%=recipient.BPNumber%>%011&d_cid_ic=AdobeCampaignID%01<%=recipient.BPNumber%>%011&d_sid=19401505" width="0" height="0" />
+    <%@ include view='PVIEW24' %>
+  </div>
+  <!-- Visually Hidden Preheader Text : END -->    
+  
+  <div style="max-width:480px; margin:auto;" class="mobileBorder">
+    <!--[if mso]>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="480" align="center">
+            <tr>
+            <td>
+            <![endif]-->
+
+  <!-- PreHeader : BEGIN -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width:480px;">
+      <tr>
+        <td style="padding:20px 0 20px 0px; text-align:center;font:11px Arial, Helvetica, sans-serif; mso-line-height-rule:exactly; line-height:14px; color:#727272;"> 
+            
+ <% if (targetData.segmentCode == "A1_Hot_BOPIS")  { %> 
+        <a _label="00_01_BigGame1_BOPISNewPurch_preheader_static" href="https://www.samsung.com/us/tvs/?marsLinkCategory=tv:other&<%= tracking %>#tvsoundbars" target="_blank" style="color:#727272; text-decoration:underline;"> <%= preheader %> </a>
+
+<% } else if (targetData.segmentCode == "A1_Hot")  { %>
+      <a _label="02_02_BigGame2_BOPISHOTPastPurch_preheader_staticc" href="https://www.samsung.com/us/tvs/?marsLinkCategory=tv:other&<%= tracking %>#tvsoundbars" target="_blank" style="color:#727272; text-decoration:underline;"> <%= preheader %> </a>    
+          
+     
+  <% } %>  
+    
+    </td>
+            </tr>
+          </table> 
+      
+<!-- Email Body : BEGIN -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="background-color:#f4f4f4; padding:0;">
+      <tr>
+        <td align="left" valign="top" bgcolor="#f4f4f4" style="background-color:#f4f4f4; color:#000000;">
+      
+    <% if (targetData.segmentCode == "A1_Hot_BOPIS")  { %>   
+         <!-- Logo, Flush : BEGIN -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td> <a _label="00_01_brand_zzz_logo_static" href="https://www.samsung.com/us/tvs/?marsLinkCategory=tv:other&<%= tracking %>#tvsoundbars" target="_blank" style="color:#000000;"><img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/MM-HOT-BOPIS_03_9P_CE_adh_HE_TV_MarchMadness_Sustain_HOT_20230307_logo.png" width="480" alt="SAMSUNG" border="0" style="display:block; width:100%; max-width:480px;" /></a> </td>
+            </tr>
+          </table>
+          <!-- Logo, Flush : END --> 
+      
+          <!-- HR_Module : BEGIN -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="01_01_product_TV_Audio_image_static" href="" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_Hot-BOPIS_20230307_01v3_02.png" width="480" alt="<%= firstModuleAlt %> - Save up to $200 when you purchase a 55&Prime; QN85B with a HW-Q910B.&sup1;" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+      
+      
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="01_01_product_TV_Audio_text_static" href="https://www.samsung.com/us/shop/bundles/tv-audio/neoqled4k/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/MM-HOT-BOPIS_03_9P_CE_adh_HE_TV_MarchMadness_Sustain_HOT_20230307_text.png" width="480" alt="Beat the buzzer on this deal! - Surround yourself with the sound of your TV and soundbar working in harmony." border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+      
+      
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="01_01_product_TV_Audio_CTA_static" href="https://www.samsung.com/us/shop/bundles/tv-audio/neoqled4k/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/MM-HOT-BOPIS_03_9P_CE_adh_HE_TV_MarchMadness_Sustain_HOT_20230307_CTA.png" width="480" alt="Shop now" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>  
+
+          <!-- HR_Module : END --> 
+      
+         
+          <!-- MD2_Module : BEGIN -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="2a_01_product_S95C OLED_image_static" href="https://www.samsung.com/us/televisions-home-theater/tvs/oled-tvs/77-class-s95c-oled-4k-smart-tv-2023-qn77s95cafxza/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_20230307_Mod_2a.png" width="480" alt="Go Big and Go Home with these amazing offers. - In stadium feel at home - Can't make it to the game? Transform every seat in your house into a courtside seat with mesmerizing picture quality and gorgeous colors.The 77&Prime; Class OLED S95C starting from from $4,499.99 or $125/mo for 36 mos.* - Buy now" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+         <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="2b_01_product_QN95B_image_static" href="https://www.samsung.com/us/televisions-home-theater/tvs/samsung-neo-qled-4k/85-class-qn95b-samsung-neo-qled-4k-smart-tv-2022-qn85qn95bafxza/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_HOT_20230307_Mod_2b.png" width="480" alt="Get up to $2,300 off on the QN95B - Watch your content reach peak performance with Motion Xcelerator Turbo Pro and see your favorite players in all their glory. The Neo QLED QN95B starting From $1,099.99 or $30.56/mo for 36 mos.* - Buy now" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="2c_01_product_QN800B_image_static" href="https://www.samsung.com/us/televisions-home-theater/tvs/samsung-neo-qled-8k/75-class-qn800b-samsung-neo-qled-8k-qn75qn800bfxza/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_20230307_Mod_2c.png" width="480" alt="Get up to $2,000 off on the QN800B - All the action. All in 8K. See your bracket come to life with immersive picture and cinematic sound.&sup2; The Neo QLED 8K QN800B starting from $2,599.99 or $72.22/mo for 36 mos.* - Buy now" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+           
+          <!-- MD2_Module : END -->
+      
+  
+   
+          <!-- MD3_Module : BEGIN -->
+      
+      
+      
+      
+       
+           <!--  Samsung advantage : BEGIN -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#000000;" width="100%">
+            <tr>
+              <td align="left" width= "100%" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="03_01_ BOPIS_image_static" href="https://www.samsung.com/us/tvs/?marsLinkCategory=tv:other&<%= tracking %>#tvsoundbars" target="_blank">
+                <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_Hot-BOPIS_20230307_03_textV2.png" width="480" alt="Shop on Samsung.com and pick up at Best Buy&sup3; - Shop now" style="display: block; width: 100%; max-width: 480px;" border="0"/>
+                </a> </td>
+            </tr>
+          </table>
+           <!--  - Samsung advantage : END -->
+
+          
+           <!-- MD3_Module_image_static : END -->
+          
+           <!-- MD3_Module : END --> 
+      
+      <% } else if (targetData.segmentCode == "A1_Hot")  { %> 
+      <!-- Logo, Flush : BEGIN -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td> <a _label="02_02_brand_zzz_logo_static" href="https://www.samsung.com/us/tvs/?marsLinkCategory=tv:other&<%= tracking %>#tvsoundbars" target="_blank" style="color:#000000;"><img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/MM-HOT-BOPIS_03_9P_CE_adh_HE_TV_MarchMadness_Sustain_HOT_20230307_logo.png" width="480" alt="SAMSUNG" border="0" style="display:block; width:100%; max-width:480px;" /></a> </td>
+            </tr>
+          </table>
+        
+        
+          <!-- Logo, Flush : END --> 
+      
+          <!-- HR_Module : BEGIN -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="01_02_product_TV_Audio_image_static" href="" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_Hot-BOPIS_20230307_01v3_02.png" width="480" alt="<%= firstModuleAlt %> - Save up to $200 when you purchase a 55&Prime; QN85B with a HW-Q910B.&sup1;" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+      
+      
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="01_02_product_TV_Audio_text_static" href="https://www.samsung.com/us/shop/bundles/tv-audio/neoqled4k/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/MM-HOT-BOPIS_03_9P_CE_adh_HE_TV_MarchMadness_Sustain_HOT_20230307_text.png" width="480" alt="Beat the buzzer on this deal! - Surround yourself with the sound of your TV and soundbar working in harmony." border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+      
+      
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="01_02_product_TV_Audio_CTA_static" href="https://www.samsung.com/us/shop/bundles/tv-audio/neoqled4k/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/MM-HOT-BOPIS_03_9P_CE_adh_HE_TV_MarchMadness_Sustain_HOT_20230307_CTA.png" width="480" alt="Shop now" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>  
+
+          <!-- HR_Module : END --> 
+      
+         
+          <!-- MD2_Module : BEGIN -->
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="2a_02_product_S95C OLED_image_static" href="https://www.samsung.com/us/televisions-home-theater/tvs/oled-tvs/77-class-s95c-oled-4k-smart-tv-2023-qn77s95cafxza/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_20230307_Mod_2a.png" width="480" alt="Go Big and Go Home with these amazing offers. - In stadium feel at home - Can't make it to the game? Transform every seat in your house into a courtside seat with mesmerizing picture quality and gorgeous colors.The 77&Prime; Class OLED S95C starting from from $4,499.99 or $125/mo for 36 mos.* - Buy now" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+         <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="2b_02_product_QN95B_image_static" href="https://www.samsung.com/us/televisions-home-theater/tvs/samsung-neo-qled-4k/85-class-qn95b-samsung-neo-qled-4k-smart-tv-2022-qn85qn95bafxza/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_HOT_20230307_Mod_2b.png" width="480" alt="Get up to $2,300 off on the QN95B - Watch your content reach peak performance with Motion Xcelerator Turbo Pro and see your favorite players in all their glory. The Neo QLED QN95B starting From $1,099.99 or $30.56/mo for 36 mos.* - Buy now" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; background-color:#f4f4f4;" width="100%">
+            <tr>
+              <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="2c_02_product_QN800B_image_static" href="https://www.samsung.com/us/televisions-home-theater/tvs/samsung-neo-qled-8k/75-class-qn800b-samsung-neo-qled-8k-qn75qn800bfxza/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_20230307_Mod_2c.png" width="480" alt="Get up to $2,000 off on the QN800B - All the action. All in 8K. See your bracket come to life with immersive picture and cinematic sound.&sup2; The Neo QLED 8K QN800B starting from $2,599.99 or $72.22/mo for 36 mos.* - Buy now" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+           
+          <!-- MD2_Module : END -->   
+   
+          <!-- MD3_Module : BEGIN -->
+       
+           <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="max-width:480px; backbackground-color:#f4f4f4;" width="100%">
+            <tr> <td align="left" valign="top" style="font:12px Arial, Helvetica, sans-serif; color:#000000; padding:0;"> <a _label="03_03_Advantage_image_static" href="https://www.samsung.com/us/?marsLinkCategory=tv:other&<%= tracking %>" target="_blank" style="color:#000000;"> <img src="https://res.info.samsungusa.com/res/samsung_mkt_prod1/9P_CE_adh_HE_TV_MarchMadness_Sustain_HOT_20230307_SA.png" width="480" alt="Shop at Samsung.com now to experience The Samsung Advantage - Instant Financing with 0% APR, $0 down &sup3; - Seamless service with free delivery and hassle-free returns - Pay in 4 with Affirm  No impact to credit score. No fees & $0 due today.&sup4;" border="0" style="display:block; width:100%; max-width:480px;" /> </a> </td>
+            </tr>
+          </table>
+
+          
+              
+      <!-- MD3_Module : END --> 
+
+         
+     <% } %>
+           <!-- 10px Space : BEGIN -->
+          <%@ include view='PVIEW494' %>
+           <!-- 10px Space : END -->
+
+
+ 
+<!-- Star Rating Survey Content : BEGIN -->
+<%@ include view='PVIEW675' %>
+<!-- Star Rating Survey Content : END -->
+        
+         </td>
+      </tr>
+    </table>              
+    <!-- Email Body : END -->
+  
+    <!-- Social Footers : BEGIN -->
+    <%@ include view='PVIEW774' %>
+    <!-- Social Footers : End --> 
+
+  
+    <!-- Email Footer : BEGIN -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 480px;">
+      <tr>
+        <td style="padding: 0px 10px 40px 10px;width: 100%;font-size: 12px; font-family: Arial, Helvetica, sans-serif; mso-height-rule: exactly; line-height:16px; text-align: left; color: #727272;">
+      
+    
+    
+*0% APR for 12, 18, 24, 36, 40 or 48 Months with Equal Payments: Available on purchases of select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of eligible purchase until paid in full. Estimated monthly payment equals the eligible purchase amount multiplied by a repayment factor and rounded down to the nearest penny (repayment factors: .08333 for 12 month, .05556 for 18 month, .04167 for 24 month, .02778 for 36 month, .02500 for 40 month, .02083 for 48 month). Last payment may vary due to rounding. Total amount of payments will not exceed eligible purchase amount. Other transactions and fees affect overall minimum payment amount. Advertised payment amount, if any, is an estimate and may change once taxes, delivery or other charges are added. Limited time offer. Regular account terms apply to non-promo purchases.  Standard Purchase APR: 29.99%.  Minimum interest charge: $1. Prior purchases excluded. Account must be in good standing. Subject to credit approval. Samsung Financing account issued by TD Bank,<span>&nbsp;</span>N.A.<br/><br/>
+      
+    
+Prices reflected in this email are as of 03/02/2023 and are subject to change. Check <a _label="99_99_legal_static" href="https://www.samsung.com/us/?marsLinkCategory=general:general&<%= tracking %>" target="_blank" style="color:#727272; text-decoration: underline;">Samsung.com/us</a> for the latest<span>&nbsp;</span>pricing.<br/><br/>
+      
+ <% if (targetData.segmentCode == "A1_Hot_BOPIS")  { %>        
+<sup style="line-height: 0px;">1</sup>Purchase a 55&Prime;+ 2022 UHD/OLED/QLED (8K, 4K, Frame, Serif &amp; Terrace) TV with a qualifying soundbar (listed below) on the same receipt and save! Excludes all TV Drop-in models, restricted to 2022 TV main line up.  Bundle saving can be stacked with stand-alone soundbar instant<span>&nbsp;</span>rebates.<br/><br/>
+      
+In-Home Soundbars:  
+<li>Save $300 ($150 TC): HW-Q990B </li>  
+<li>Save $200 ($130 TC): HW-Q910B</li>  
+<li>Save $100 ($65 TC): HW-Q800B, HW-Q700B, HW-Q600B, HW-S800B / S801B</li>  
+<li>Save $50 ($32.50 TC): HW-Q60B</li><br/><br/>    
+    
+Outdoor/In-Home Soundbar:  
+<li> Save $300 ($195 TC): HW-LST70T (all other TVs) </li>  
+<li>Save $500 ($325 TC): HW-LST70T (w/ Terrace TVs Only) Refer to Enhanced</li>  
+<li>Terrace TV + SB Outdoor Bundle savings</li><br/><br/>      
+      
+Qualifying soundbar must be purchased within 60 days of eligible Samsung TV purchase at same retailer.<br/><br/>
+Offers valid through 4/2/2023 at 11:59 EST. Promotion applied at checkout.<br/><br/>
+      
+<sup style="line-height: 0px;">2</sup>Utilizes AI-Based formulas to upscale to 8K Resolution. Resulting picture may vary based on source<span>&nbsp;</span>content.    <br/><br/>  
+<sup style="line-height: 0px;">3</sup>At participating Best Buy<span>&nbsp;</span>locations. <br/><br/>      
+                
+<% } else if (targetData.segmentCode == "A1_Hot")  { %>    
+<sup style="line-height: 0px;">1</sup>Purchase a 55&Prime;+ 2022 UHD/OLED/QLED (8K, 4K, Frame, Serif &amp; Terrace) TV with a qualifying soundbar (listed below) on the same receipt and save! Excludes all TV Drop-in models, restricted to 2022 TV main line up.  Bundle saving can be stacked with stand-alone soundbar instant<span>&nbsp;</span>rebates.<br/><br/>  
+In-Home Soundbars:
+<li>Save $300 ($150 TC): HW-Q990B </li>  
+<li>Save $200 ($130 TC): HW-Q910B</li>  
+<li>Save $100 ($65 TC): HW-Q800B, HW-Q700B, HW-Q600B, HW-S800B / S801B</li>  
+<li>Save $50 ($32.50 TC): HW-Q60B</li><br/><br/>    
+    
+Outdoor/In-Home Soundbar:  
+<li> Save $300 ($195 TC): HW-LST70T (all other TVs) </li>  
+<li>Save $500 ($325 TC): HW-LST70T (w/ Terrace TVs Only) Refer to Enhanced</li>  
+<li>Terrace TV + SB Outdoor Bundle savings</li><br/><br/>      
+      
+Qualifying soundbar must be purchased within 60 days of eligible Samsung TV purchase at same retailer.<br/><br/>
+Offers valid through 4/2/2023 at 11:59 EST. Promotion applied at checkout.<br/><br/>
+      
+<sup style="line-height: 0px;">2</sup>Utilizes AI-Based formulas to upscale to 8K Resolution. Resulting picture may vary based on source<span>&nbsp;</span>content.    <br/><br/>  
+<sup style="line-height: 0px;">3</sup>0% APR for 24, 36, 40, 48 Months with Equal Payments: Available on purchases of select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of eligible purchase until paid in full. Estimated monthly payment equals the eligible purchase amount multiplied by a repayment factor and rounded down to the nearest penny (repayment factors: .08333 for 12 month, .05556 for 18 month, .04167 for 24 month, .02778 for 36 month, .02500 for 40 month, .02083 for 48 month) Last payment may vary due to rounding. Total amount of payments will not exceed eligible purchase amount if payments are made on time. Other transactions and fees affect overall minimum payment amount. Advertised payment amount, if any, is an estimate and may change once taxes, delivery or other charges are added. Limited time offer. Regular account terms apply to non-promo purchases. If your account becomes 60 days past due your promotional offer will be revoked and any remaining balance will be placed on the standard Purchase APR. Standard Purchase APR: 29.99%. Minimum interest charge: $1. Prior purchases excluded. Account must be in good standing. Subject to credit approval. Samsung Financing account issued by TD Bank,<span>&nbsp;</span>N.A.<br/><br/>      
+
+              
+<sup style="line-height: 0px;">4</sup>Payment options are offered by Affirm, are subject to an eligibility check, and may not be available in all states. Options depend on your purchase amount, and a down payment may be required. California residents: Affirm Loan Services, LLC is licensed by the Department of Business Oversight. Loans are made or arranged pursuant to California Financing Law license<span>&nbsp;</span>60DBO-111681.<br/><br/>      
+      
+
+   <% } %>
+          
+
+<%@ include view='PVIEW27' %>   
+Samsung Electronics America, Inc. Samsung is a registered trademark of Samsung Electronics Co., Ltd. Use only in accordance with law. Other company and product names mentioned may be trademarks of their respective owners. Screen images simulated. Actual appearances may<span>&nbsp;</span>vary.
+<%@ include view='PVIEW25' %>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Email Footer : END --> 
+  
+    <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+           
+
+  </div>
+</center>
+</body>
+</html>
